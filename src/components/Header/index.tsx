@@ -1,6 +1,6 @@
 import * as S from './header.style'
-import logo from '../../../public/assets/images/logo.svg'
-import cart from '../../../public/assets/images/icon-cart.svg'
+import logo from '/assets/images/logo.svg'
+import cart from '/assets/images/icon-cart.svg'
 
 
 
