@@ -1,20 +1,18 @@
-import React, { useState } from "react"
+import React, { ImgHTMLAttributes, useState } from "react"
 import  { ProductImages } from './Images'
 import * as S from './productGallery.style'
 
-interface ProductImagesProps extends HTMLAttributes<MouseEventHandler>{
+interface ProductImagesProps extends ImgHTMLAttributes<HTMLImageElement> {
   image: string;
 }
 
 
 
 
-export const ProductGallery = () => {
-  
-  const [selectedImage, setSelectedImage] = useState(ProductImages[0]);
-  // console.log(ProductImages[0]);
-  console.log(selectedImage);
-  
+export const ProductGallery = ({
+  image,
+}: ProductImagesProps) => {
+  const [selectedImage, setSelectedImage] = useState(ProductImages[0]);  
     return(
       <S.GalleryContainer>
         <img src={selectedImage.image} alt="Selected" className="selected" />
@@ -23,7 +21,7 @@ export const ProductGallery = () => {
             <img key={index}
              src={image}
              className="imageThumb"
-             onClick={(image: ProductImagesProps) => setSelectedImage(image)}
+             onClick={() => setSelectedImage({image})}
              />
             
           ))}
