@@ -1,10 +1,10 @@
-import Carousel  from "../../components/Carousel"
+import { ProductGallery }  from "../../components/ProductGallery"
 
 
 
 
 export const ProductPage = () => {
   return(
-    <Carousel />
+    <ProductGallery />
   )  
 }
