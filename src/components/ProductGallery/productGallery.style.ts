@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const GalleryContainer= styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-gap: 30px;
 
@@ -15,12 +15,13 @@ export const GalleryContainer= styled.div`
     }
 
     .selected {
-      grid-column: span 2;
+      
     }
 
     .imageContainer {
       grid-row: 2;
-      grid-column: span 2;
+      display: flex;
+      
       
       
     }

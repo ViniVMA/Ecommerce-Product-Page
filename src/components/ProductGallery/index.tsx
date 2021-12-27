@@ -2,16 +2,9 @@ import React, { ImgHTMLAttributes, useState } from "react"
 import  { ProductImages } from './Images'
 import * as S from './productGallery.style'
 
-interface ProductImagesProps extends ImgHTMLAttributes<HTMLImageElement> {
-  image: string;
-}
 
 
-
-
-export const ProductGallery = ({
-  image,
-}: ProductImagesProps) => {
+export const ProductGallery = () => {
   const [selectedImage, setSelectedImage] = useState(ProductImages[0]);  
     return(
       <S.GalleryContainer>
