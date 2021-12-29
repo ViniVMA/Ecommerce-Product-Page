@@ -6,6 +6,7 @@ export const PriceWrapper = styled.div`
     display: grid;
     grid-template-columns: 2fr 1fr 5fr;
     grid-gap: 10px;
+    padding-bottom: 10px;
 
 `
 
@@ -20,6 +21,7 @@ export const Price = styled.div`
    color: #b6bcc8;
    text-decoration-line: line-through;
    grid-row: 2;
+   padding-bottom: 25px;
 `
 
 export const DiscountPercent = styled.div`

@@ -1,5 +1,5 @@
 import React, { ImgHTMLAttributes, useState } from "react"
-import  { ProductImages } from './Images'
+import { Sneakers, ProductImages } from '../ProductDescription/Product/'
 import * as S from './productGallery.style'
 
 

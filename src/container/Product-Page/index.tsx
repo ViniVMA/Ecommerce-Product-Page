@@ -1,7 +1,9 @@
+import React from "react";
+import * as S from "./productPage.style"
 import { ProductDescription } from "../../components/ProductDescription"
 import { ProductGallery }  from "../../components/ProductGallery"
-import * as S from "./productPage.style"
-import React from "react";
+import { ProductCounter } from "../../components/ProductCounter";
+
 
 
 
@@ -13,6 +15,7 @@ export const ProductPage = () => {
       </S.GalleryWrraper>
       <S.DescriptionWrapper>
        <ProductDescription />
+       <ProductCounter />
       </S.DescriptionWrapper>
     </S.ProductPageContainer>
   )  

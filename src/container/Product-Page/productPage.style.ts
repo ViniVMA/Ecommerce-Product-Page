@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { ProductGallery }  from "../../components/ProductGallery"
+
+
 
 
 export const ProductPageContainer = styled.div`

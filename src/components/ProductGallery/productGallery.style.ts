@@ -13,6 +13,7 @@ export const GalleryContainer= styled.div`
     img {
       max-width: 400px;
       border-radius: 20px;
+      cursor: pointer;
 
     }
 
@@ -49,6 +50,7 @@ export const FullscreenGallery = styled(Modal)`
     img {
       max-width: 400px;
       border-radius: 20px;
+      cursor: pointer;
 
     }
 
